@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ui": [
+        "packages/ui/src"
+      ],
+      "@ui/*": [
+        "packages/ui/src/*"
+      ],
+      "@store": [
+        "packages/store/src"
+      ],
+      "@store/*": [
+        "packages/store/src/*"
+      ],
+      "@lib": [
+        "packages/lib/src"
+      ],
+      "@lib/*": [
+        "packages/lib/src/*"
+      ]
+    }
+  }
+}

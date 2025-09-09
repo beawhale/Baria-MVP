@@ -1,0 +1,12 @@
+{
+  "name": "@store",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
+    "localforage": "^1.10.0",
+    "redux-persist": "^6.0.0"
+  }
+}

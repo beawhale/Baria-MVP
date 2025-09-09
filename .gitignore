@@ -1,0 +1,31 @@
+# Node / monorepo
+node_modules/
+.pnpm-store/
+pnpm-debug.log
+
+# Build outputs
+dist/
+build/
+coverage/
+**/dist/
+**/build/
+
+# Environment / local config
+.env*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Visual Studio/JetBrains artifacts
+.vs/
+
+# Capacitor / Android / iOS
+apps/mobile/android/.gradle/
+apps/mobile/android/**/build/
+apps/mobile/ios/build/
+apps/mobile/ios/Pods/
+apps/mobile/ios/DerivedData/
+
+# Misc
+*.log

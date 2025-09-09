@@ -1,0 +1,25 @@
+{
+  "name": "BARIA-MVP",
+  "private": true,
+  "packageManager": "pnpm@10.15.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "scripts"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter @app/web dev",
+    "build:web": "pnpm --filter @app/web build",
+    "preview:web": "pnpm --filter @app/web preview",
+    "dev:desktop": "pnpm -C apps/desktop dev",
+    "build:desktop": "pnpm -C apps/desktop build",
+    "mobile:buildweb": "pnpm build:web",
+    "mobile:sync": "pnpm -C apps/mobile cap sync",
+    "mobile:android": "pnpm mobile:buildweb && pnpm -C apps/mobile cap sync && pnpm -C apps/mobile cap open android",
+    "dev:all": "concurrently -k \"pnpm dev:web\" \"pnpm dev:desktop\"",
+    "mobile:init": "node scripts/mobile-init.cjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

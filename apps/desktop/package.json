@@ -1,0 +1,14 @@
+{
+  "name": "@app/desktop",
+  "private": true,
+  "version": "0.0.1",
+  "main": "main.cjs",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node dev.cjs",
+    "build": "echo TODO: electron-builder"
+  },
+  "dependencies": {
+    "electron": "^31.7.7"
+  }
+}

@@ -1,6 +1,18 @@
 {
   "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "../../",
+    "paths": {
+      "@ui": ["packages/ui/src"],
+      "@ui/*": ["packages/ui/src/*"],
+      "@store": ["packages/store/src"],
+      "@store/*": ["packages/store/src/*"],
+      "@lib": ["packages/lib/src"],
+      "@lib/*": ["packages/lib/src/*"]
+    }
+  },
   "include": [
+    "src",
     "../../packages/ui/src",
     "../../packages/store/src",
     "../../packages/lib/src"
